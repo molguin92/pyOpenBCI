@@ -79,6 +79,7 @@ def benchmark_ganglion(mac: str,
     _, minmax, mean, var, _, _, = scipy.stats.describe(sampling_rates)
 
     counter.stop()
+    board.disconnect()
 
     print(f'''
 ... Sampling rate benchmark results for OpenBCI Ganglion ...
